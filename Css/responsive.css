@@ -1,0 +1,140 @@
+@media screen and (max-width: 1200px){
+    #container {
+        flex-direction: column-reverse;
+    }
+    #right, #left{
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #top-menu .blue-btn{
+        display: none;
+    }
+    #right {
+        text-align: center;
+    }
+    #service-box{
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+    .service{
+        flex-basis: 47%;
+    }
+    #teacher-box{
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+    .teacher{
+        flex-basis: 47%;
+    }
+    #email-send{
+        width: 80%;
+    }
+    #columns-box{
+        flex-wrap: wrap;
+    }
+    .column{
+        flex-basis: 47%;
+    }
+    #top-meno > ul > li{
+        margin: 0 10px;
+    }
+    #course-box{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /*#top-menu {
+        !*border: 1px solid black;*!
+        display: flex;
+        align-items: center;
+    }*/
+    #top-menu > ul {
+        /*border: 1px solid black;*/
+        position: fixed;
+        width: 250px;
+        height: 100%;
+        z-index: 20;
+        right: -100%;
+        top: 0;
+        background-color: var(--mainColor);
+        transition: all 0.3s;
+    }
+    #top-menu > ul.show {
+        right: 0;
+    }
+    #top-menu > ul > li {
+        display: block;
+        margin: 0;
+    }
+    #top-menu > ul > li > a:link,
+    #top-menu > ul > li > a:visited {
+        color: #fff;
+        border-bottom: 1px solid #004476;
+        display: block;
+        padding: 15px;
+        transition: all 0.3s;
+    }
+    #top-menu > ul > li > a:hover {
+        background-color: var(--hoverColor);
+        padding-right: 25px;
+    }
+
+
+
+    /*#top-menu > ul{
+        display: none;
+    }*/
+    #show-menu:link,
+    #show-menu:visited{
+        display: inline-block;
+    }
+    ul#filter{
+        flex-wrap: wrap;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    ul#filter a:link,
+    ul#filter a:visited{
+        display: block;
+    }
+    .column{
+        flex-basis: 100%;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .service{
+        flex-basis: 100%;
+    }
+    .teacher{
+        flex-basis: 100%;
+    }
+    #course-box{
+        grid-template-columns: auto;
+    }
+    #parent{
+        flex-wrap: wrap;
+    }
+    #designer ,#copy{
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
